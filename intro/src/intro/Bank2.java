@@ -30,19 +30,16 @@ public class Bank2 {
 				f=sc.next();
 				if(f.equals("Balance")) {
 					showBalance();
-					
 				}
 				if(f.equals("Deposit")) {
 					IO.println("Enter Deposit ");
 				double	g=sc.nextDouble();
 					deposit(g);
-					
 				}
 				if(f.equals("Withdraw")) {
 					IO.println("Enter Withdraw");
 					double h=sc.nextDouble();
 					withdraw(h);
-					
 				}
 			}
 			IO.println("END");
