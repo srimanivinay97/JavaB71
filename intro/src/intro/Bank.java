@@ -1,53 +1,45 @@
 package intro;
 
-import java.util.Scanner;
 public class Bank {
-	static double balance=10_000;
-	static void showBalance(){
-		System.out.println(balance);
+	int accountnumber=1;
+	String AccountHolderName;
+	
+	static double Balance;
+	static String Bank;
+	static String Branch;
+	void Showbalance() {
+		System.out.println(AccountHolderName+"\n"+accountnumber+"\n"+"available balance is "+Balance);
 	}
-	static void deposit(double amount){
-		balance+=amount;
-	}
-	static void withdraw(double amount) {
-		if(amount<=balance) {
-			balance+=amount;
-		}
-		else {
-			IO.println("insufficient balance");
-		}
-		
+	void Deposit(double amount) {
+		Balance+=amount;
+		System.out.println(amount+" Deposited into account.no "+accountnumber+" AccountHolderName "+AccountHolderName);
 	}
 	public static void main(String[] args) {
-			Scanner sc=new Scanner(System.in);
-			String f = "a";
-			while(!f.equals("exit")) {
-				IO.println("Enter your choice ");
-				IO.println("Balance ");
-				IO.println("Deposit ");
-				IO.println("Withdraw ");
-				IO.println("exit");
-				f=sc.next();
-				if(f.equals("Balance")) {
-					showBalance();
-					
-				}
-				if(f.equals("Deposit")) {
-					IO.println("Enter Deposit ");
-				double	g=sc.nextDouble();
-					deposit(g);
-					
-				}
-				if(f.equals("Withdraw")) {
-					IO.println("Enter Withdraw");
-					double h=sc.nextDouble();
-					withdraw(h);
-					
-				}
-			}
-			IO.println("END");
-			sc.close();
+		
+		Bank Account1=new Bank();
+		Account1.accountnumber=12345678;
+		Account1.AccountHolderName="Vinay";
+		Balance=1000;
+		Bank= "SBI";
+		Branch="Gachibowli";
+		
+		//2nd Account Holder
+		
+		Bank Account2=new Bank();
+		Account2.accountnumber=1230987654;
+		Account2.AccountHolderName="Mani";
+		Balance=5000;
+		
+		//3rd Account Holder
+		
+		Bank Account3=new Bank();
+		
+		Account3.AccountHolderName="Sri";
+		Balance=500;
+		
+		//Deposit into account3
+		
+		System.out.println(Account3.accountnumber);
 	}
 
-	
 }
