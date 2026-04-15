@@ -1,7 +1,7 @@
 package intro;
 
 import java.util.Scanner;
-public class Bank {
+public class Bank2 {
 	static double balance=10_000;
 	static void showBalance(){
 		System.out.println(balance);
@@ -46,7 +46,6 @@ public class Bank {
 				}
 			}
 			IO.println("END");
-			sc.close();
 	}
 
 	
