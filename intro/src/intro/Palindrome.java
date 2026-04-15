@@ -1,11 +1,10 @@
 package intro;
-//Palindrome using for-loop
+//String Palindrome using for-loop
 public class Palindrome {
 static void show(String a) {
-	String b=a;
 	String c="";
-	for(int i=b.length()-1;i>=0;i--) {
-		c+=b.charAt(i);
+	for(int i=a.length()-1;i>=0;i--) {
+		c+=a.charAt(i);
 	}
 	if(c.equals(a)) {
 		System.out.println(true);
@@ -15,7 +14,7 @@ static void show(String a) {
 	}
 }
 	public static void main(String[] args) {
-		String a= "123464321";
+		String a= "1234643210";
 		show(a);
 	}
 }
