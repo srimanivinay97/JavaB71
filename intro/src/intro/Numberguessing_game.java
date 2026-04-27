@@ -1,5 +1,5 @@
 package intro;
-import java.util.*;
+import java.util.Scanner;
 import java.math.*;
 public class Numberguessing_game {
 
@@ -15,6 +15,7 @@ public class Numberguessing_game {
 		else {
 			System.out.println("wrong guess . the correct number is: "+number);
 		}
+		input.close();
 	}
 
 }
