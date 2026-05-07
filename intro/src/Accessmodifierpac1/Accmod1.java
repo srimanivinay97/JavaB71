@@ -25,8 +25,8 @@ public class Accmod1 {
 	private String name1="vinay";
 	
 	//private constructor
-	public Accmod1(){
-		IO.println("no arg constructor");
+	protected Accmod1(){
+		IO.println("no arg constructor accmod1 from pac1");
 	}
 	
 	//private method

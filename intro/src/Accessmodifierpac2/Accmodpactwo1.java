@@ -6,7 +6,7 @@ public class Accmodpactwo1 extends Accmod1{
 
 	public static void main(String[] args) {
 		// TODO Auto-generated method stub
-		Accmod1 a1=new Accmod1();
+		Accmodpactwo1 a1=new Accmodpactwo1();
 		IO.println(a1.i2);
 		IO.println(a1.name2);
 		IO.println("**************************");
