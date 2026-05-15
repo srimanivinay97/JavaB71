@@ -3,6 +3,7 @@ package oops1;
 import java.util.Scanner;
 
 class Account{
+	
 	static Scanner sc=new Scanner(System.in);
 	double p=sc.nextDouble();
 	static {

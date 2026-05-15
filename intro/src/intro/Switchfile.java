@@ -11,6 +11,6 @@ public class Switchfile {
 		};
 		System.out.println(result);
 
-	}
+ 	}
 
 }
